@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — NeuTech</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />  
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+.timeline-roadmap {
+  position: relative;
+  padding: 2rem 0;
+}
+
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--brand), var(--brand-2));
+  border-radius: 2px;
+  z-index: 1;
+}
+
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+
+.timeline-item.left { left: 0; text-align: right; }
+.timeline-item.right { left: 50%; text-align: left; }
+
+.timeline-content {
+  position: relative;
+  display: inline-block;
+  border-radius: var(--radius);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-content:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+}
+
+
+.timeline-badge {
+  position: absolute;
+  top: 1rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+
+.timeline-item.left .timeline-badge {
+  right: -20px;
+}
+.timeline-item.right .timeline-badge {
+  left: -20px;
+}
+
+
+@media (max-width: 768px) {
+  .timeline-item, .timeline-item.left, .timeline-item.right {
+    width: 100%;
+    text-align: left;
+    padding-left: 3rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .timeline-item.left .timeline-badge,
+  .timeline-item.right .timeline-badge {
+    left: -20px;
+    right: auto;
+  }
+  .timeline-line { left: 20px; }
+}
+
+
+</style>
+</head>
+<body data-theme="dark">
+
+<!-- NAVBAR -->
+<nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <span class="icon-badge"><i class="bi bi-stars"></i></span>
+      <span>NeuTech</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="py-5 text-center position-relative">
+  <div class="container glass p-5" data-aos="fade-up">
+    <h1 class="display-5 fw-bold gradient-text">About NeuTech</h1>
+    <p class="lead" style="color: var(--muted);">
+      Founded in 2025 to provide honest software solutions and innovative services to clients worldwide.
+    </p>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="glass p-3">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" class="rounded w-100" alt="Company Vision">
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="glass p-4">
+          <h2 class="h3 gradient-text">Our Vision & Mission</h2>
+          <p>NeuTech delivers cutting-edge software with honesty and transparency. We empower businesses through scalable platforms, clean code, and innovative technologies while fostering trust.</p>
+          <ul class="list-unstyled d-grid gap-2">
+            <li><i class="bi bi-check-circle me-2" style="color: var(--brand-2);"></i>Deliver high-quality, reliable software</li>
+            <li><i class="bi bi-check-circle me-2" style="color: var(--brand-2);"></i>Maintain client trust with transparency</li>
+            <li><i class="bi bi-check-circle me-2" style="color: var(--brand-2);"></i>Encourage innovation and creativity in our team</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="h2 gradient-text">Meet Our Founders</h2>
+      <p> Tejas Dhawad & Harshal Lonare — Passionate software engineers with a vision for excellence</p>
+    </div>
+    <div class="row g-4 justify-content-center">
+    
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-4 text-center h-100 shadow-soft founder-card">
+          <div class="position-relative mb-3">
+            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHNob3RzfGVufDB8fDB8fHww"  alt="Tejas Dhawad">
+            <span class="badge-role">Co-Founder & Software Engineer</span>
+          </div>
+          <h5 class="fw-bold mb-2">Tejas Dhawad</h5>
+          <p class=" mb-3">Passionate about building scalable and innovative software solutions.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" ><i class="bi bi-twitter"></i></a>
+            <a href="#" ><i class="bi bi-linkedin"></i></a>
+            <a href="#" ><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-4 text-center h-100 shadow-soft founder-card">
+            <div class="position-relative mb-3">
+           
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=faces&fit=crop&w=400&h=400&q=80"
+                class="founder-img" 
+                alt="Harshal Lonare">
+            <span class="badge-role">Co-Founder & Software Engineer</span>
+            </div>
+            <h5 class="fw-bold mb-2">Harshal Lonare</h5>
+            <p class="mb-3">Focused on clean code, innovative technologies, and client success.</p>
+            <div class="d-flex justify-content-center gap-3">
+            <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter "></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin "></i></a>
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github "></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5" id="our-team">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="h2 gradient-text">Meet Our Team</h2>
+      <p style="color: var(--muted);">A passionate group of innovators driving NeuTech forward</p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- TEAM LEADERSHIP -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+        <div class="glass p-4 text-center h-100 shadow-soft team-card highlight-card">
+          <div class="position-relative mb-3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=faces&fit=crop&w=400&h=400&q=80"
+                alt="Ritikesh Fulzele" class="team-img">
+            <span class="badge-role">Chief Technical Officer</span>
+          </div>
+          <h5 class="fw-bold mb-2">Ritikesh Fulzele</h5>
+          <p class="mb-3">Leading NeuTech’s tech vision, driving innovation, and architecting scalable solutions.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-4 text-center h-100 shadow-soft team-card">
+          <div class="position-relative mb-3">
+            <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Priya Sharma" class="team-img">
+            <span class="badge-role">Lead Backend Developer</span>
+          </div>
+          <h5 class="fw-bold mb-2">Shubham Kumar</h5>
+          <p class="mb-3">Turning complex logic into seamless experiences — the mastermind behind our backend magic</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEAM MEMBER 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass p-4 text-center h-100 shadow-soft team-card">
+          <div class="position-relative mb-3">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=250"
+                 alt="Amit Verma" class="team-img">
+            <span class="badge-role">Full Stack Developer</span>
+          </div>
+          <h5 class="fw-bold mb-2">xyz</h5>
+          <p class="mb-3">Building scalable web apps with modern frameworks and clean architecture.</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<!-- ROADMAP TIMELINE -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="h2 gradient-text">Our Journey & Goals</h2>
+      <p style="color: var(--muted);">From 2025 onwards, here's how we are building our path.</p>
+    </div>
+
+    <div class="position-relative timeline-roadmap">
+      <!-- Vertical line -->
+      <div class="timeline-line"></div>
+
+      <!-- Timeline items -->
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content glass p-4 shadow-soft">
+          <span class="timeline-badge"><i class="bi bi-building"></i></span>
+          <h5 class="gradient-text">2025 - Company Founded</h5>
+          <p>NeuTech was established by Tejas & Harshal to provide honest and innovative software services.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content glass p-4 shadow-soft">
+          <span class="timeline-badge"><i class="bi bi-briefcase"></i></span>
+          <h5 class="gradient-text">2025 - First Client Projects</h5>
+          <p>Successfully delivered initial projects focusing on quality and transparency.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left" data-aos="fade-right" data-aos-delay="100">
+        <div class="timeline-content glass p-4 shadow-soft">
+          <span class="timeline-badge"><i class="bi bi-laptop"></i></span>
+          <h5 class="gradient-text">2026 - Expanding Services</h5>
+          <p>Introducing AI, web, and mobile solutions along with mentorship and internships.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right" data-aos="fade-left" data-aos-delay="100">
+        <div class="timeline-content glass p-4 shadow-soft">
+          <span class="timeline-badge"><i class="bi bi-rocket"></i></span>
+          <h5 class="gradient-text">Future Goals</h5>
+          <p>Become a globally recognized software studio delivering honest, innovative, and high-quality solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+<section class="py-5 text-center">
+  <div class="container glass p-5" data-aos="fade-up">
+    <h2 class="h2 mb-3 gradient-text">Want to work with us?</h2>
+    <p style="color: var(--muted);" class="mb-4">Collaborate on your next project or join our team to build the future.</p>
+    <a href="career.html" class="btn btn-brand pill px-4 py-2 me-2">Join Our Team</a>
+    <a href="index.html#contact" class="btn btn-outline-brand pill px-4 py-2">Get a Quote</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer py-5 border-top border-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="icon-badge"><i class="bi bi-stars"></i></span>
+          <span class="fw-bold">NeuTech</span>
+        </div>
+        <p class="small" style="color: var(--muted);">Design‑driven software studio crafting scalable platforms and stunning experiences.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3">Company</h6>
+        <ul class="list-unstyled d-grid gap-2 small">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Case studies</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3">Resources</h6>
+        <ul class="list-unstyled d-grid gap-2 small">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Open source</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold mb-3">Newsletter</h6>
+        <form class="d-flex gap-2">
+          <input type="email" class="form-control" placeholder="Your email" required>
+          <button class="btn btn-outline-brand pill" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="divider my-4"></div>
+    <div class="d-flex justify-content-between small" style="color: var(--muted);">
+      <div>© <span id="year"></span> NeuTech. All rights reserved.</div>
+      <div><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Security</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>

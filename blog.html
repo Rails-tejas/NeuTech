@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — NeuTech</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Animations / Sliders -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <span class="icon-badge"><i class="bi bi-stars"></i></span>
+      <span>NeuTech</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BLOG HERO -->
+<section class="py-5 text-center bg-gradient-light" style="background: radial-gradient(1200px 600px at 20% -10%, rgba(124,92,255,.1), transparent 60%),
+              radial-gradient(1000px 500px at 110% 0%, rgba(39,211,161,.1), transparent 60%);">
+  <div class="container">
+    <h1 class="display-5 fw-bold mb-3">NeuTech Blogs</h1>
+    <p >Insights, tutorials, and updates from our team of developers and designers.</p>
+  </div>
+</section>
+
+<!-- BLOG POSTS GRID -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Blog Card -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="glass p-4 h-100 d-flex flex-column">
+          <img src="https://via.placeholder.com/400x200" class="rounded mb-3" alt="Blog Post 1">
+          <h3 class="h5 mb-2">How to Build Modern Web Apps with React</h3>
+          <p>Learn step-by-step how to create responsive, interactive web apps using React and modern JavaScript.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Aug 25, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-4 h-100 d-flex flex-column">
+          <img src="https://via.placeholder.com/400x200" class="rounded mb-3" alt="Blog Post 2">
+          <h3 class="h5 mb-2">Database Optimization Tips for Developers</h3>
+          <p>Improve your database queries and performance with these practical tips for MySQL, PostgreSQL, and more.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Aug 20, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass p-4 h-100 d-flex flex-column">
+          <img src="https://via.placeholder.com/400x200" class="rounded mb-3" alt="Blog Post 3">
+          <h3 class="h5 mb-2">UI/UX Design Trends in 2025</h3>
+          <p class="flex-grow-1">Explore the latest design trends to create visually stunning, user-friendly interfaces for web and mobile.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Aug 18, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row mb-4" data-aos="fade-up">
+      <div class="col text-center">
+        <h2 class="section-title h1 mb-2">Trending Blogs</h2>
+        <p>Latest insights in AI, software development, and modern tech trends.</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Blog Card 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="glass p-4 h-100 d-flex flex-column position-relative">
+          <img src="https://images.unsplash.com/photo-1581093588401-7f1db90faebd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGFpfGVufDB8fHx8MTY5MzY2NzQ0OQ&ixlib=rb-4.0.3&q=80&w=400" class="rounded mb-3" alt="AI Blog">
+          <h3 class="h5 mb-2">AI in Modern Software Development</h3>
+          <p class="flex-grow-1">Explore how AI is revolutionizing coding, testing, and software optimization in 2025.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Sep 1, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass p-4 h-100 d-flex flex-column position-relative">
+          <img src="https://images.unsplash.com/photo-1612831455542-2f802b4b5b18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" class="rounded mb-3" alt="Software Blog">
+          <h3 class="h5 mb-2">Top Software Development Trends 2025</h3>
+          <p class="flex-grow-1">A deep dive into frameworks, tools, and methodologies shaping software engineering today.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Aug 28, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="glass p-4 h-100 d-flex flex-column position-relative">
+          <img src="https://images.unsplash.com/photo-1622030577543-7b9c30c6bff6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" class="rounded mb-3" alt="AI Coding">
+          <h3 class="h5 mb-2">AI-Assisted Coding Tools</h3>
+          <p class="flex-grow-1">How AI tools like Copilot, ChatGPT, and others are boosting developer productivity.</p>
+          <div class="mt-3 d-flex justify-content-between align-items-center">
+            <span class="small">Aug 25, 2025</span>
+            <a href="#" class="btn btn-sm btn-outline-brand pill">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer py-5 border-top border-0">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="icon-badge"><i class="bi bi-stars"></i></span>
+          <span class="fw-bold">NeuTech</span>
+        </div>
+        <p class="small">Design‑driven software studio crafting scalable platforms and stunning experiences.</p>
+        <div class="d-flex gap-3">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3">Company</h6>
+        <ul class="list-unstyled d-grid gap-2 small">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Case studies</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="fw-bold mb-3">Resources</h6>
+        <ul class="list-unstyled d-grid gap-2 small">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Open source</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h6 class="fw-bold mb-3">Newsletter</h6>
+        <form class="d-flex gap-2">
+          <input type="email" class="form-control" placeholder="Your email" required>
+          <button class="btn btn-outline-brand pill" type="submit">Subscribe</button>
+        </form>
+        <div class="small mt-2 text-muted">By subscribing you agree to our <a href="#">Privacy Policy</a>.</div>
+      </div>
+    </div>
+    <div class="divider my-4"></div>
+    <div class="d-flex justify-content-between small text-muted">
+      <div>© <span id="year"></span> NeuTech. All rights reserved.</div>
+      <div><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Security</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+  document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuTech — Build Beyond</title>
+  <meta name="description" content="Modern software company landing page: services, case studies, pricing, careers, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+        <span class="icon-badge"><i class="bi bi-stars"></i></span>
+        <span>NeuTech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-sm btn-outline-brand pill"><i class="bi bi-moon-stars me-1"></i> Theme</button>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-sm btn-brand pill ms-lg-2" href="#contact">Get a Quote</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">```````
+    <div class="orb"></div>
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <span class="tag mb-3"><i class="bi bi-lightning-charge"></i> Enterprise-grade software, shipped faster</span>
+          <h1 class="display-4 fw-800 lh-tight mb-3">
+            We design & build <span class="gradient-text">performant apps</span> that scale with you
+          </h1>
+          <p class="lead text-opacity-75 mb-4" style="color:var(--muted)">From MVPs to multi-cloud platforms—our team delivers clean architectures, delightful UX, and measurable business outcomes.</p>
+          <div class="d-flex gap-2">
+            <a href="#work" class="btn btn-brand btn-lg pill">See our work</a>
+            <a href="#services" class="btn btn-outline-brand btn-lg pill">Explore services</a>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="badge rounded-pill badge-tech"><i class="bi bi-bootstrap"></i> Frontend</span>
+            <span class="badge rounded-pill badge-tech"><i class="bi bi-award"></i>Full-Stack</span>
+            <span class="badge rounded-pill badge-tech"><i class="bi bi-cloud"></i> Cloud Native</span>
+            <span class="badge rounded-pill badge-tech"><i class="bi bi-lightning-charge"></i> Marketing</span>
+            <span class="badge rounded-pill badge-tech"><i class="bi bi-shield-check"></i> Secure by Design</span>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="150">
+          <div class="glass p-3 p-lg-4 shadow-soft">
+            <div class="ratio ratio-16x9 rounded-4 overflow-hidden">
+              <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1600&auto=format&fit=crop" style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="https://videos.pexels.com/video-files/853395/853395-hd_1920_1080_25fps.mp4" type="video/mp4">
+                
+              </video>
+
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-3">
+              <div class="icon-badge"><i class="bi bi-rocket-takeoff"></i></div>
+              <div>
+                <div class="fw-bold">Average launch time</div>
+                <div class="text-secondary" style="color:var(--muted)"><span id="kpiDays" class="fw-bold">28</span> days to MVP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services" class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <h2 class="section-title h1 mb-2">Services</h2>
+          <p class="section-sub">Full‑stack product teams for web, mobile, and cloud. Pick a track or mix and match.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end" data-aos="fade-up" data-aos-delay="100">
+          <a href="#contact" class="btn btn-outline-brand pill">Start a project</a>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-phone"></i></div>
+              <h3 class="h5 mb-0">App & Web Development</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">React, Rails, Djnago, Springboot and Flutter. Pixel-perfect UI with robust APIs.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Design systems & accessibility</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>SSR/ISR, SEO, analytics ready</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>CI/CD pipelines</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-cloud-arrow-up"></i></div>
+              <h3 class="h5 mb-0">Cloud & DevOps</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">AWS, GCP, Azure. Scalable infra, monitoring, and cost optimization.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Kubernetes & serverless</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>IaC with Terraform</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Blue‑green deploys</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-moon-stars"></i></div>
+              <h3 class="h5 mb-0">Branding & Design</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">Canva branding, poster designs, and visual identity for social media and campaigns.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Custom Canva templates for social media</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Poster & flyer design</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Logo design & brand elements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3 class="h5 mb-0">Data & AI</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">ETL pipelines, dashboards, ML/LLM integrations to unlock insights.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Warehouses & Lakehouse</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>RAG & vector search</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>MLOps & monitoring</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-people"></i></div>
+              <h3 class="h5 mb-0">Dedicated Teams</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">Scale your capacity with pod‑based squads, embedded with your team.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Agile rituals & OKRs</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Transparent velocity</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Time‑zone overlap</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-card glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="icon-badge"><i class="bi bi-bag-check"></i></div>
+              <h3 class="h5 mb-0">Consulting & Audits</h3>
+            </div>
+            <p class="mb-3" style="color:var(--muted)">Architecture reviews, performance audits, and roadmap planning.</p>
+            <ul class="list-unstyled d-grid gap-2 small text-opacity-75">
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Cost & performance tuning</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Security hardening</li>
+              <li><i class="bi bi-check-circle me-2 text-success"></i>Migration strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES / WORK -->
+  <section id="work" class="py-5">
+    <div class="container">
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <h2 class="section-title h1 mb-2">Selected Work</h2>
+          <p class="section-sub">A few outcomes we’re proud of.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="glass p-3 p-lg-4 h-100">
+            <div class="ratio ratio-21x9 rounded-4 overflow-hidden mb-3">
+              <img class="w-100 h-100 object-fit-cover" alt="Fintech dashboard" src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZpbnRlY2h8ZW58MHx8MHx8fDA%3D"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-3">
+              <div>
+                <h3 class="h5 mb-1">Fintech Analytics Suite</h3>
+                <p class="mb-0 small" style="color:var(--muted)">Scaled to 5M MAU, 99.95% uptime.</p>
+              </div>
+              <a class="btn btn-sm btn-outline-brand pill" href="#">Read case study</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="glass p-3 p-lg-4 h-100">
+            <div class="ratio ratio-21x9 rounded-4 overflow-hidden mb-3">
+              <img class="w-100 h-100 object-fit-cover" alt="eCommerce storefront" src="https://images.unsplash.com/photo-1542744095-291d1f67b221?q=80&w=1600&auto=format&fit=crop"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-3">
+              <div>
+                <h3 class="h5 mb-1">eCommerce Platform Revamp</h3>
+                <p class="mb-0 small" style="color:var(--muted)">+42% conversions, sub‑second TTFB.</p>
+              </div>
+              <a class="btn btn-sm btn-outline-brand pill" href="#">Read case study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+          <div class="glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <i class="bi bi-geo-alt"></i>
+              <span>Our Goal: Countries</span>
+            </div>
+            <div class="display-6 fw-bold" id="counter1">10+</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <i class="bi bi-people"></i>
+              <span>Target Users by 2025</span>
+            </div>
+            <div class="display-6 fw-bold" id="counter2">1,000</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+          <div class="glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <i class="bi bi-cpu"></i>
+              <span>Scaling to Deploys / Month</span>
+            </div>
+            <div class="display-6 fw-bold" id="counter3">100</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass p-4 h-100">
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <i class="bi bi-award"></i>
+              <span>Target NPS</span>
+            </div>
+            <div class="display-6 fw-bold" id="counter4">80+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-5 py-lg-6">
+  <div class="container">
+    <div class="row align-items-end mb-4">
+      <div class="col-lg-7" data-aos="fade-up">
+        <h2 class="section-title h1 mb-2">Flexible, Custom Pricing</h2>
+        <p class="section-sub">As a growing startup, we offer tailored plans based on your needs. No hidden costs, no surprises.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="pricing-card glass p-5 text-center">
+          <i class="bi bi-currency-dollar display-5 text-brand mb-3"></i>
+          <h3 class="h4 mb-2">Get a Free Quote</h3>
+          <p class="small" style="color:var(--muted)">
+            Since we’re a new startup, our pricing is completely flexible.  
+            Share your requirements and we’ll send you a personalized quote.
+          </p>
+          <button class="btn btn-brand pill mt-3 px-4 py-2" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            Request Free Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote Modal -->
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content glass p-4">
+        <h4 class="mb-3 text-center" id="quoteModalLabel">Request a Free Quote</h4>
+        <form id="quoteForm">
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Company / Startup Name</label>
+            <input type="text" class="form-control" id="company" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Project Requirements</label>
+            <textarea class="form-control" id="requirements" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-brand w-100 pill">Submit Request</button>
+        </form>
+        <div class="thank-you text-center mt-3" style="display:none;">
+          <i class="bi bi-check-circle-fill text-success fs-3"></i>
+          <p class="mt-2 mb-0 fw-bold">Thank you! We’ll contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="glass p-4 h-100">
+            <h2 class="section-title h1 mb-3">We blend craft with speed</h2>
+            <p style="color:var(--muted)">At <strong>Neutech</strong>, we’re a passionate team of developers, designers, and innovators.
+                  Our journey has just begun, but we’re committed to building powerful, modern, and scalable solutions for businesses of all sizes.</p>
+            <div class="row g-3 mt-2">
+          
+              <div class="col-6">
+                <div class="p-3 rounded-4 border" style="border-color: rgba(255,255,255,.12)">
+                  <div class="h3 mb-0">2025</div>
+                  <div class="small" style="color:var(--muted)">Founded</div>
+                </div>
+              </div> 
+              <div class="col-6">
+                <div class="p-3 rounded-4 border" style="border-color: rgba(255,255,255,.12)">
+                  <div class="h3 mb-0">3+</div>
+                  <div class="small" style="color:var(--muted)">Projects in Progress</div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 rounded-4 border" style="border-color: rgba(255,255,255,.12)">
+                  <div class="h3 mb-0">6+</div>
+                  <div class="small" style="color:var(--muted)">Tech Experts</div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 rounded-4 border" style="border-color: rgba(255,255,255,.12)">
+                  <div class="h3 mb-0">24/7</div>
+                  <div class="small" style="color:var(--muted)">Support & Availability</div>
+                </div>
+              </div>
+            </div>
+
+       
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="swiper glass p-3 p-lg-4">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote class="mb-0">
+                  <p class="fs-5">“NeuTech helped us ship our website in record time without sacrificing quality.”</p>
+                  <footer class="mt-2 small" style="color:var(--muted)">Bhujang Khorgade, Orgnizer GPL</footer>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote class="mb-0">
+                  <p class="fs-5">“Their DevOps and observability setup saved us 35% on infra and reduced incidents.”</p>
+                  <footer class="mt-2 small" style="color:var(--muted)">Arjun S., CTO at Shoply</footer>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote class="mb-0">
+                  <p class="fs-5">“Crystal‑clear communication and predictable delivery. A++ team.”</p>
+                  <footer class="mt-2 small" style="color:var(--muted)">Mia T., Founder at SproutAI</footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 py-lg-6">
+    <div class="container">
+      <div class="row align-items-start g-4">
+        <div class="col-lg-5" data-aos="fade-up">
+          <h2 class="section-title h1 mb-2">Tell us about your project</h2>
+          <p class="section-sub">We’ll get back within one business day.</p>
+          <div class="glass p-4 mt-3">
+            <div class="d-flex gap-3 align-items-center">
+              <div class="icon-badge"><i class="bi bi-envelope-paper"></i></div>
+              <div>
+                <div class="fw-bold">Email</div>
+                <div class="small" style="color:var(--muted)">support@neutech.com</div>
+              </div>
+            </div>
+            <div class="divider my-3"></div>
+            <div class="d-flex gap-3 align-items-center">
+              <div class="icon-badge"><i class="bi bi-clock-history"></i></div>
+              <div>
+                <div class="fw-bold">Office hours</div>
+                <div class="small" style="color:var(--muted)">Mon–Fri, 9:00–18:00 IST</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <form class="glass p-4 needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full name</label>
+                <input type="text" class="form-control" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Work email</label>
+                <input type="email" class="form-control" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Company</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Budget</label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Choose…</option>
+                  <option>Under $10k</option>
+                  <option>$10k–$25k</option>
+                  <option>$25k–$50k</option>
+                  
+                </select>
+                <div class="invalid-feedback">Select a budget range.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Project description</label>
+                <textarea class="form-control" rows="4" placeholder="What are you building?" required></textarea>
+                <div class="invalid-feedback">Please add a short brief.</div>
+              </div>
+              <div class="col-12 d-flex justify-content-between align-items-center">
+               
+                <button type="submit" class="btn btn-brand pill">Send message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-5 border-top border-0">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="icon-badge"><i class="bi bi-stars"></i></span>
+            <span class="fw-bold">NeuTech</span>
+          </div>
+          <p class="small" style="color:var(--muted)">Design‑driven software studio crafting scalable platforms and stunning experiences.</p>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Case studies</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Resources</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Open source</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="fw-bold mb-3">Newsletter</h6>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Your email" required>
+            <button class="btn btn-outline-brand pill" type="submit">Subscribe</button>
+          </form>
+          <div class="small mt-2" style="color:var(--muted)">By subscribing you agree to our <a href="#">Privacy Policy</a>.</div>
+        </div>
+      </div>
+      <div class="divider my-4"></div>
+      <div class="d-flex justify-content-between small" style="color:var(--muted)">
+        <div>© <span id="year"></span> NeuTech. All rights reserved.</div>
+        <div><a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Security</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // AOS init
+    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
+
+    // Swiper init (testimonials)
+    const swiper = new Swiper('.swiper', { loop: true, pagination: { el: '.swiper-pagination', clickable: true }, autoplay: { delay: 3500 } });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth active nav link highlight
+    const sections = document.querySelectorAll('section[id], header.hero');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        const id = entry.target.getAttribute('id') || 'top';
+        if(entry.isIntersecting){
+          navLinks.forEach(l=>l.classList.remove('active'));
+          const link = document.querySelector(`.nav-link[href="#${id}"]`);
+          if(link) link.classList.add('active');
+        }
+      })
+    },{ root: null, threshold: 0.4 });
+    sections.forEach(s=>observer.observe(s));
+
+    // Counters
+    const targets = [
+      { el: '#counter1', end: 10 },
+      { el: '#counter2', end: 10000 },
+      { el: '#counter3', end: 5 },
+      { el: '#counter4', end: 80 }
+    ];
+    const easeOut = t => 1 - Math.pow(1 - t, 4);
+    const runCounter = (el, end, duration=1600) => {
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min(1, (now-start)/duration);
+        const value = Math.floor(easeOut(p) * end);
+        el.textContent = value.toLocaleString();
+        if(p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    };
+    const counterObserver = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          targets.forEach(t=>{ const el = document.querySelector(t.el); el && runCounter(el, t.end); });
+          counterObserver.disconnect();
+        }
+      })
+    },{ threshold: 0.5 });
+    counterObserver.observe(document.querySelector('#work'));
+
+    // Theme toggle (light/dark)
+    const themeToggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    const applyTheme = (theme) => {
+      document.body.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      themeToggle.innerHTML = theme === 'light' ? '<i class="bi bi-brightness-high me-1"></i> Theme' : '<i class="bi bi-moon-stars me-1"></i> Theme';
+    };
+    applyTheme(localStorage.getItem('theme') || 'dark');
+    themeToggle.addEventListener('click', ()=>{
+      const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+
+    // Sticky navbar shadow on scroll
+    const topNav = document.getElementById('topNav');
+    const setShadow = () => {
+      if(window.scrollY > 8){ topNav.classList.add('shadow'); } else { topNav.classList.remove('shadow'); }
+    };
+    setShadow();
+    window.addEventListener('scroll', setShadow);
+
+    // Form validation
+    (function(){
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form=>{
+        form.addEventListener('submit', function(e){
+          if(!form.checkValidity()){
+            e.preventDefault(); e.stopPropagation();
+          } else {
+            e.preventDefault();
+            alert('Thanks! We\'ll be in touch shortly.');
+            form.reset();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+
+    // KPI days randomize on load (fun micro‑interaction)
+    const kpi = document.getElementById('kpiDays');
+    kpi.textContent = (24 + Math.floor(Math.random()*8)).toString();
+
+   
+  document.getElementById("quoteForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.querySelector("#quoteForm").style.display = "none";
+    document.querySelector(".thank-you").style.display = "block";
+
+    setTimeout(() => {
+      const modal = bootstrap.Modal.getInstance(document.getElementById("quoteModal"));
+      modal.hide();
+      document.querySelector("#quoteForm").style.display = "block";
+      document.querySelector(".thank-you").style.display = "none";
+      document.getElementById("quoteForm").reset();
+    }, 2000);
+  });
+
+  </script>
+  
+</body>
+</html>
