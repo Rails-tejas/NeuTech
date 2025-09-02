@@ -49,6 +49,22 @@
       color: var(--brand); /* optional: make the color pop */
     }
 
+    .navbar-brand {
+      color: var(--text) !important;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    /* Hover effect */
+    .navbar-brand:hover {
+      opacity: 1;
+      font-weight: 700;
+      color: var(--brand) !important; 
+    }
+
+
     .glass{
       background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
       backdrop-filter: var(--blur);
@@ -144,4 +160,14 @@
     z-index: 1; /* make sure button is on top if needed */
   }
 
-  
+  #live-blogs {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+  }
