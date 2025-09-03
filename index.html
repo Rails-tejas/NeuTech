@@ -321,22 +321,24 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content glass p-4">
         <h4 class="mb-3 text-center" id="quoteModalLabel">Request a Free Quote</h4>
-        <form id="quoteForm">
+        <form id="freeQuoteForm" action="https://formspree.io/f/xovnkoly" method="POST" class="needs-validation">
           <div class="mb-3">
             <label class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" name = "name"class="form-control" id="name" required>
           </div>
           <div class="mb-3">
             <label class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" required>
+           
+            <input type="email" name="_replyto" class="form-control" required>
+
           </div>
           <div class="mb-3">
             <label class="form-label">Company / Startup Name</label>
-            <input type="text" class="form-control" id="company" required>
+            <input type="text"  name="company" class="form-control" id="company" required>
           </div>
           <div class="mb-3">
             <label class="form-label">Project Requirements</label>
-            <textarea class="form-control" id="requirements" rows="3" required></textarea>
+            <textarea class="form-control" name = "requirements" id="requirements" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn btn-brand w-100 pill">Submit Request</button>
         </form>
@@ -399,20 +401,20 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <blockquote class="mb-0">
-                  <p class="fs-5">“NeuTech helped us ship our website in record time without sacrificing quality.”</p>
+                  <p class="fs-6">“NeuTech helped us ship our website in record time without sacrificing quality.”</p>
                   <footer class="mt-2 small" style="color:var(--muted)">Bhujang Khorgade, Orgnizer GPL</footer>
                 </blockquote>
               </div>
               <div class="swiper-slide">
                 <blockquote class="mb-0">
-                  <p class="fs-5">“Their DevOps and observability setup saved us 35% on infra and reduced incidents.”</p>
-                  <footer class="mt-2 small" style="color:var(--muted)">Arjun S., CTO at Shoply</footer>
+                  <p class="fs-6">“Their DevOps and observability setup saved us 35% on infra & reduced incidents.”</p>
+                  <footer class="mt-2 small" style="color:var(--muted)">Arjun S., </footer>
                 </blockquote>
               </div>
               <div class="swiper-slide">
                 <blockquote class="mb-0">
-                  <p class="fs-5">“Crystal‑clear communication and predictable delivery. A++ team.”</p>
-                  <footer class="mt-2 small" style="color:var(--muted)">Mia T., Founder at SproutAI</footer>
+                  <p class="fs-6">“Crystal‑clear communication and predictable delivery. A++ team.”</p>
+                  <footer class="mt-2 small" style="color:var(--muted)">Mia T.,</footer>
                 </blockquote>
               </div>
             </div>
@@ -449,44 +451,61 @@
           </div>
         </div>
         <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-          <form class="glass p-4 needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label">Full name</label>
-                <input type="text" class="form-control" required>
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Work email</label>
-                <input type="email" class="form-control" required>
-                <div class="invalid-feedback">Please enter a valid email.</div>
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Company</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Budget</label>
-                <select class="form-select" required>
-                  <option value="" selected disabled>Choose…</option>
-                  <option>Under $10k</option>
-                  <option>$10k–$25k</option>
-                  <option>$25k–$50k</option>
-                  
-                </select>
-                <div class="invalid-feedback">Select a budget range.</div>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Project description</label>
-                <textarea class="form-control" rows="4" placeholder="What are you building?" required></textarea>
-                <div class="invalid-feedback">Please add a short brief.</div>
-              </div>
-              <div class="col-12 d-flex justify-content-between align-items-center">
-               
-                <button type="submit" class="btn btn-brand pill">Send message</button>
-              </div>
+        <form id="contactForm" class="glass p-4 needs-validation" novalidate
+              action="https://formspree.io/f/mvgbbade" method="POST">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full name</label>
+              <input type="text" class="form-control" name="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
-          </form>
+
+            <div class="col-md-6">
+              <label class="form-label">Work email</label>
+              <input type="email" class="form-control" name="_replyto" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Company</label>
+              <input type="text" class="form-control" name="company">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Budget</label>
+              <select class="form-select" name="budget" required>
+                <option value="" selected disabled>Choose…</option>
+                <option>Under $10k</option>
+                <option>$10k–$25k</option>
+                <option>$25k–$50k</option>
+              </select>
+              <div class="invalid-feedback">Select a budget range.</div>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Project description</label>
+              <textarea class="form-control" name="description" rows="4" placeholder="What are you building?" required></textarea>
+              <div class="invalid-feedback">Please add a short brief.</div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-between align-items-center">
+              <button type="submit" class="btn btn-brand pill">Send message</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Thank you message -->
+        <div class="thank-you-tech text-center mt-3" style="display:none;">
+          <div class="tech-check">
+            <i class="bi bi-check-lg"></i>
+            <div class="tech-glow"></div>
+            <div class="tech-particles">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <p class="mt-2 mb-0 fw-bold">Thank you! We’ll contact you shortly.</p>
+        </div>
+
         </div>
       </div>
     </div>
@@ -544,106 +563,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    // AOS init
-    AOS.init({ once: true, duration: 700, easing: 'ease-out-cubic' });
 
-    // Swiper init (testimonials)
-    const swiper = new Swiper('.swiper', { loop: true, pagination: { el: '.swiper-pagination', clickable: true }, autoplay: { delay: 3500 } });
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Smooth active nav link highlight
-    const sections = document.querySelectorAll('section[id], header.hero');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        const id = entry.target.getAttribute('id') || 'top';
-        if(entry.isIntersecting){
-          navLinks.forEach(l=>l.classList.remove('active'));
-          const link = document.querySelector(`.nav-link[href="#${id}"]`);
-          if(link) link.classList.add('active');
-        }
-      })
-    },{ root: null, threshold: 0.4 });
-    sections.forEach(s=>observer.observe(s));
-
-    // Counters
-    const targets = [
-      { el: '#counter1', end: 10 },
-      { el: '#counter2', end: 10000 },
-      { el: '#counter3', end: 5 },
-      { el: '#counter4', end: 80 }
-    ];
-    const easeOut = t => 1 - Math.pow(1 - t, 4);
-    const runCounter = (el, end, duration=1600) => {
-      const start = performance.now();
-      function tick(now){
-        const p = Math.min(1, (now-start)/duration);
-        const value = Math.floor(easeOut(p) * end);
-        el.textContent = value.toLocaleString();
-        if(p < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    };
-    const counterObserver = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          targets.forEach(t=>{ const el = document.querySelector(t.el); el && runCounter(el, t.end); });
-          counterObserver.disconnect();
-        }
-      })
-    },{ threshold: 0.5 });
-    counterObserver.observe(document.querySelector('#work'));
-
-    
-
-    // Sticky navbar shadow on scroll
-    const topNav = document.getElementById('topNav');
-    const setShadow = () => {
-      if(window.scrollY > 8){ topNav.classList.add('shadow'); } else { topNav.classList.remove('shadow'); }
-    };
-    setShadow();
-    window.addEventListener('scroll', setShadow);
-
-    // Form validation
-    (function(){
-      const forms = document.querySelectorAll('.needs-validation');
-      Array.from(forms).forEach(form=>{
-        form.addEventListener('submit', function(e){
-          if(!form.checkValidity()){
-            e.preventDefault(); e.stopPropagation();
-          } else {
-            e.preventDefault();
-            alert('Thanks! We\'ll be in touch shortly.');
-            form.reset();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    })();
-
-    // KPI days randomize on load (fun micro‑interaction)
-    const kpi = document.getElementById('kpiDays');
-    kpi.textContent = (24 + Math.floor(Math.random()*8)).toString();
-
-   
-  document.getElementById("quoteForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    document.querySelector("#quoteForm").style.display = "none";
-    document.querySelector(".thank-you").style.display = "block";
-
-    setTimeout(() => {
-      const modal = bootstrap.Modal.getInstance(document.getElementById("quoteModal"));
-      modal.hide();
-      document.querySelector("#quoteForm").style.display = "block";
-      document.querySelector(".thank-you").style.display = "none";
-      document.getElementById("quoteForm").reset();
-    }, 2000);
-  });
-
-  </script>
 
     <!-- Back to Top Button -->
   <button id="backToTop" class="back-to-top" aria-label="Back to Top">
@@ -671,6 +591,7 @@
 </script>
 
 <script src="javascript/theme.js"></script>
+<script src="javascript/main.js"></script>
 
   
 </body>
