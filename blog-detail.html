@@ -18,6 +18,13 @@
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="stylesheets/style.css">
+
+  <script>
+    // Apply saved theme immediately
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
+
 </head>
 <body>
 
