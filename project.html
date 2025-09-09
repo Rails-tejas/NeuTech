@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NeuTech - Projects</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuTech — Live Projects</title>
+  <meta name="description" content="Showcasing the innovation and impact of NeuTech through live projects." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" href="public/favicon_io/android-chrome-512x512.png">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-
   <!-- NAVBAR -->
   <nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-4">
     <div class="container">
@@ -25,16 +31,17 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
-          <li class="nav-item ms-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="project.html">Projects</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
   <!-- Hero -->
   <section class="hero text-center">
     <div class="orb"></div>
     <div class="container">
-      <h1 class="section-title display-4 white-text">Our Live Projects</h1>
+      <h1 class="section-title display-4 gradient-text">Our Live Projects</h1>
       <p class="section-sub">Showcasing the innovation and impact of NeuTech.</p>
     </div>
   </section>
@@ -44,148 +51,52 @@
     <div class="container">
       <div class="row g-4">
 
-       <div class="col-md-4">
-  <div class="glass p-3 h-100 shadow-soft" 
-       style="background: rgba(20, 20, 40, 0.55); 
-              border-radius: 18px; 
-              color: #fff; 
-              overflow: hidden; 
-              backdrop-filter: blur(12px); 
-              border: 1px solid rgba(255,255,255,0.15); 
-              box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
-              transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    
-    <!-- Project Preview Image -->
-    <img src="public/favicon_io/project1.png" 
-         alt="Appnex Website" 
-         style="width: 100%; 
-                border-radius: 12px; 
-                margin-bottom: 15px; 
-                transition: transform 0.3s ease;">
-    
-    <!-- Text Content -->
-          <div>
-            <h3 class="fw-bold mb-3" 
-                style="color:#fff; font-size: 22px; letter-spacing: 0.5px;">
-              Appnex Website
-            </h3>
-            <p style="color: rgba(255,255,255,0.85); 
-                      font-size: 15px; 
-                      line-height: 1.7;">
-              Appnex is a platform for growing renewable resources, 
-              providing innovative digital solutions for a sustainable future.
-            </p>
-
-            <!-- Features List -->
-            <ul style="list-style: none; padding-left: 0; margin: 15px 0; 
-                      font-size: 15px; color: rgba(255,255,255,0.85);">
-              <li>✅ Responsive & SEO-friendly design</li>
-              <li>✅ Built with modern HTML, CSS, JavaScript</li>
-            </ul>
-
-            <!-- Badges -->
-            <div class="d-flex flex-wrap gap-2 mb-3">
-              <span style="background:linear-gradient(135deg,#3665b6,#27447a); 
-                          color:#fff; font-size: 13px; 
-                          padding:6px 14px; border-radius: 25px; 
-                          box-shadow:0 3px 8px rgba(0,0,0,0.25);">
-                Managed by NeuTech
-              </span>
-              <span style="background:linear-gradient(135deg,#3665b6,#27447a); 
-                          color:#fff; font-size: 13px; 
-                          padding:6px 14px; border-radius: 25px; 
-                          box-shadow:0 3px 8px rgba(0,0,0,0.25);">
-                Maintained by NeuTech
-              </span>
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="glass p-3 h-100 shadow-soft">
+            <img src="public/favicon_io/project1.png" alt="Appnex Website">
+            <div class="mt-3">
+              <h3 class="fw-bold mb-3">Appnex Website</h3>
+              <p>
+                Appnex is a platform for growing renewable resources,
+                providing innovative digital solutions for a sustainable future.
+              </p>
+              <ul class="mb-3">
+                <li>✅ Responsive & SEO-friendly design</li>
+                <li>✅ Built with modern HTML, CSS, JavaScript</li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="tag">Managed by NeuTech</span>
+                <span class="tag">Maintained by NeuTech</span>
+              </div>
+              <a href="https://appnex.kesug.com" target="_blank" rel="noopener" class="btn btn-outline-brand pill">
+                View Details
+              </a>
             </div>
-
-            <!-- Button -->
-            <a href="https://appnex.kesug.com" target="_blank" rel="noopener" 
-              class="btn mt-2"
-              style="background: transparent; 
-                      border: 1px solid #7C4DFF; 
-                      color:#7C4DFF; 
-                      border-radius: 10px; 
-                      padding: 10px 18px; 
-                      font-size: 14px; 
-                      font-weight: 500; 
-                      letter-spacing: 0.3px; 
-                      transition: all 0.3s ease;">
-              View Details
-            </a>
           </div>
         </div>
-      </div>
 
-     <!-- Project 2 -->
-<div class="col-md-4">
-  <div class="glass p-3 h-100 shadow-soft" 
-       style="background: rgba(20, 20, 40, 0.55); 
-              border-radius: 18px; 
-              color: #fff; 
-              overflow: hidden; 
-              backdrop-filter: blur(12px); 
-              border: 1px solid rgba(255,255,255,0.15); 
-              box-shadow: 0 8px 25px rgba(0,0,0,0.4); 
-              transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    
-    <!-- Project Preview Image -->
-            <img src="public/favicon_io/figma.png" 
-                alt="Figma Design" 
-                style="width: 100%; 
-                        border-radius: 12px; 
-                        margin-bottom: 15px; 
-                        transition: transform 0.3s ease;">
-            
-            <!-- Text Content -->
-            <div>
-              <h3 class="fw-bold mb-3" 
-                  style="color:#fff; font-size: 22px; letter-spacing: 0.5px;">
-                Figma Design
-              </h3>
-              <p style="color: rgba(255,255,255,0.85); 
-                        font-size: 15px; 
-                        line-height: 1.7;">
-                Creative UI/UX designs built in Figma with modern aesthetics, 
+        <!-- Project 2 -->
+        <div class="col-md-4">
+          <div class="glass p-3 h-100 shadow-soft">
+            <img src="public/favicon_io/figma.png" alt="Figma Design">
+            <div class="mt-3">
+              <h3 class="fw-bold mb-3">Figma Design</h3>
+              <p>
+                Creative UI/UX designs built in Figma with modern aesthetics,
                 user-friendly layouts, and scalable design systems.
               </p>
-
-              <!-- Features List -->
-              <ul style="list-style: none; padding-left: 0; margin: 15px 0; 
-                        font-size: 15px; color: rgba(255,255,255,0.85);">
+              <ul class="mb-3">
                 <li>🎨 Pixel-perfect UI mockups</li>
                 <li>⚡ Interactive prototypes & flows</li>
                 <li>📱 Responsive & mobile-first design</li>
               </ul>
-
-              <!-- Badges -->
               <div class="d-flex flex-wrap gap-2 mb-3">
-                <span style="background:linear-gradient(135deg,#3665b6,#27447a); 
-                            color:#fff; font-size: 13px; 
-                            padding:6px 14px; border-radius: 25px; 
-                            box-shadow:0 3px 8px rgba(0,0,0,0.25);">
-                  Managed by NeuTech
-                </span>
-                <span style="background:linear-gradient(135deg,#3665b6,#27447a); 
-                            color:#fff; font-size: 13px; 
-                            padding:6px 14px; border-radius: 25px; 
-                            box-shadow:0 3px 8px rgba(0,0,0,0.25);">
-                  Maintained by NeuTech
-                </span>
+                <span class="tag">Managed by NeuTech</span>
+                <span class="tag">Maintained by NeuTech</span>
               </div>
-
-              <!-- Button -->
-              <a href="https://www.figma.com/design/x3KE7LJTbXFaBce12ZvQhQ/Contact-us-page-UIUX--Community-?node-id=1-680&p=f&t=CVc6KtMTiD61ebBu-0" target="_blank" rel="noopener" 
-                class="btn mt-2"
-                style="background: transparent; 
-                        border: 1px solid #7C4DFF; 
-                        color:#7C4DFF; 
-                        border-radius: 10px; 
-                        padding: 10px 18px; 
-                        font-size: 14px; 
-                        font-weight: 500; 
-                        letter-spacing: 0.3px; 
-                        transition: all 0.3s ease;">
+              <a href="https://www.figma.com/design/x3KE7LJTbXFaBce12ZvQhQ/Contact-us-page-UIUX--Community-?node-id=1-680&p=f&t=CVc6KtMTiD61ebBu-0" 
+                 target="_blank" rel="noopener" class="btn btn-outline-brand pill">
                 View Details
               </a>
             </div>
@@ -195,11 +106,20 @@
         <!-- Project 3 -->
         <div class="col-md-4">
           <div class="glass p-3 h-100 shadow-soft">
-            <img src="images/project3.jpg" alt="Project 3">
+            <img src="images/project3.jpg" alt="Mobile App">
             <div class="mt-3">
-              <h3 class="fw-bold">Mobile App</h3>
-              <p class="lead text-opacity-75 mb-4" style="color:var(--muted)">A cross-platform app built for seamless user experiences.</p>
-              <a href="#" class="btn btn-outline-brand mt-2">View Details</a>
+              <h3 class="fw-bold mb-3">Mobile App</h3>
+              <p>
+                A cross-platform app built for seamless user experiences.
+              </p>
+              <ul class="mb-3">
+                <li>📱 Native-like performance</li>
+                <li>⚡ Built with modern frameworks</li>
+              </ul>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="tag">Managed by NeuTech</span>
+              </div>
+              <a href="#" class="btn btn-outline-brand pill">View Details</a>
             </div>
           </div>
         </div>
@@ -209,62 +129,71 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center py-3">
-    <p class="mb-0">&copy; 2025 NeuTech. All Rights Reserved.</p>
+  <footer class="footer py-5 border-top border-0">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="icon-badge"><i class="bi bi-stars"></i></span>
+            <a href="index.html"><span class="fw-bold">NeuTech</span></a>
+          </div>
+          <p class="small" style="color:var(--muted)">Design-driven software studio crafting scalable platforms and stunning experiences.</p>
+          <div class="d-flex gap-3">
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#work">Case studies</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold mb-3">Resources</h6>
+          <ul class="list-unstyled d-grid gap-2 small">
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="career.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="fw-bold mb-3">Newsletter</h6>
+          <form class="d-flex gap-2">
+            <input type="email" class="form-control" placeholder="Your email" required>
+            <button class="btn btn-outline-brand pill" type="submit">Subscribe</button>
+          </form>
+          <div class="small mt-2" style="color:var(--muted)">By subscribing you agree to our <a href="#">Privacy Policy</a>.</div>
+        </div>
+      </div>
+      <div class="divider my-4"></div>
+      <div class="d-flex justify-content-between small" style="color:var(--muted)">
+        <div>© <span id="year"></span> NeuTech. All rights reserved.</div>
+        <div><a href="terms.html">Terms & Conditions</a></div>
+      </div>
+    </div>
   </footer>
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top hidden" aria-label="Back to Top">
-      &#8593; <!-- Up arrow -->
-    </button>
 
-    <style>
-      .back-to-top {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background-color: #7b5fff; /* purple */
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        font-size: 24px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 12px rgba(123, 95, 255, 0.5);
-        transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-        z-index: 999;
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="hidden" aria-label="Back to Top">&#8593;</button>
+
+  <script>
+    const backToTopButton = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        backToTopButton.classList.remove("hidden");
+      } else {
+        backToTopButton.classList.add("hidden");
       }
+    });
+    backToTopButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 
-      .back-to-top:hover {
-        box-shadow: 0 6px 18px rgba(123, 95, 255, 0.7);
-        transform: translateY(-2px);
-      }
-
-      .back-to-top.hidden {
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(20px);
-      }
-    </style>
-
-    <script>
-      const backToTopButton = document.getElementById("backToTop");
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 200) {
-          backToTopButton.classList.remove("hidden");
-        } else {
-          backToTopButton.classList.add("hidden");
-        }
-      });
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        });
-      });
-    </script>
+  <script src="javascript/theme.js"></script>
+  <script src="javascript/main.js"></script>
 </body>
 </html>
