@@ -362,6 +362,114 @@ select.form-select:focus {
   transform: scale(0);
   animation: pop 0.5s forwards;
 }
+/* Show dropdown on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0; /* align better */
+}
+
+/* Show sub-dropdown on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  margin-top: -1px; /* fix position */
+}
+
+/* Smooth transition */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Submenu base positioning */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+/* General dropdown style */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  animation: fadeIn 0.2s ease-in-out;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown item style */
+.dropdown-item {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Light theme */
+[data-theme="light"] .dropdown-menu {
+  background: rgba(255, 255, 255, 0.95);
+  color: #121212;
+}
+
+[data-theme="light"] .dropdown-item:hover {
+  background-color: rgba(124, 92, 255, 0.1); /* your brand color glow */
+  color: #7c5cff; /* brand */
+}
+
+/* Dark theme dropdown fix */
+[data-theme="dark"] .dropdown-menu {
+  background: rgba(20, 25, 40, 0.98); /* more opaque */
+  color: #e6eaf2;
+  border: 1px solid rgba(124, 92, 255, 0.2); /* subtle border glow */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+[data-theme="dark"] .dropdown-item {
+  color: #e6eaf2; /* make text readable */
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: rgba(124, 92, 255, 0.25); /* brand glow */
+  color: #27d3a1; /* accent */
+}
+
+/* Arrow indicator for submenu */
+.dropdown-submenu > a::after {
+  content: "›";
+  float: right;
+  margin-left: 6px;
+  font-weight: bold;
+  transform: translateY(1px);
+  opacity: 0.6;
+}
+
+/* Hover glow effect */
+.dropdown-item:hover {
+  transform: translateX(4px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 
 @keyframes pop {
   0% { transform: scale(0); opacity: 0; }

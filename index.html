@@ -16,35 +16,62 @@
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-4">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
-        <span class="icon-badge"><i class="bi bi-stars"></i></span>
-        <span>NeuTech</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
-          <li class="nav-item">
-            <a href="project.html" class="btn btn-sm btn-brand pill ms-lg-2">View Projects</a>
-          </li>
-          
-          <li class="nav-item ms-lg-2">
-            <button id="themeToggle" class="btn btn-sm btn-outline-brand pill">
-              <i class="bi bi-moon-stars"></i>
-            </button>
-          </li>
-        
-        </ul>
-      </div>
+<nav id="topNav" class="navbar navbar-expand-lg sticky-top glass py-1 px-3 mt-4">
+  <div class="container-fluid">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+      <span class="icon-badge"><i class="bi bi-stars"></i></span>
+      <span>NeuTech</span>
+    </a>
+
+    <!-- Mobile toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu items -->
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <!-- What We Do Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="whatWeDoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            What We Do
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="whatWeDoDropdown">
+            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+
+            <!-- Technology Sub Dropdown -->
+            <li class="dropdown-submenu dropend">
+              <a class="dropdown-item dropdown-toggle" href="#">Technology</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="products.html">Products</a></li>
+                
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+            <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+        <li class="nav-item">
+          <a href="project.html" class="btn btn-sm btn-brand pill ms-lg-2">View Projects</a>
+        </li>
+
+        <li class="nav-item ms-lg-2">
+          <button id="themeToggle" class="btn btn-sm btn-outline-brand pill">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <header class="hero">
